@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-image: url("https://static.vecteezy.com/ti/vetor-gratis/p1/3341640-cute-fun-seamless-pattern-of-cats-or-kittens-on-black-background-vetor.jpg");
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 40px;
+    border-radius: 10px;
+
+    background-color: #FFFFFF;
+}
+h1{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+}
+.username, .password{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+label{
+    color: #494949;
+}
+input{
+    all: unset;
+
+    width: 250px;
+    height: 20px;
+
+    padding: 5px 10px;
+    border: 1px solid #494949;
+    border-radius: 5px;
+};
+   
+p{
+    display: flex;
+    flex-direction: row-reverse;
+
+    width: 100%;
+    font-size: 12px;
+
+    color: #494949;
+
+    cursor: pointer;
+}
+button{
+    display: flex;
+    justify-content: center;
+
+    all: unset;
+
+    padding: 12px;
+    border-radius: 10px;
+
+    text-align: center;
+
+    background-color: tomato;
+    color: #FFFFFF;
+
+    cursor: pointer;
+}
