@@ -12,8 +12,45 @@ nav{
     bottom: 0;
     top: 0;
 
-    height: 100px;
+    max-height: 100px;
     width: 100vw;
 
+    padding-right: 100px;
+  
     background-color: tomato;
+}
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    height: 100%;
+    width: 50%;
+
+    font-size: 24px;
+
+    color: #FFFFFF;
+}
+.left img{
+    height: 50px;
+    cursor: pointer;
+}
+ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+
+    width: 50%;
+    height: 100%;
+}
+li{
+    list-style: none;
+
+    font-size: 22px;
+
+    color: #FFFFFF;
+
+    cursor: pointer;
 }
