@@ -1,18 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SearchComponent } from './search/search.component';
+import { CardComponent } from '../card/card/card.component';
 
 
 
 @NgModule({
   declarations: [
-    SearchComponent
+    SearchComponent,
+    CardComponent
   ],
   imports: [
     CommonModule,
   ],
   exports: [
-    SearchComponent
+    SearchComponent,
+    CardComponent
   ]
 })
 export class GalleryModule { }

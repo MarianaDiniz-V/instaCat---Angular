@@ -1,3 +1,8 @@
+<div class="input-search">
+    <input type="text" (keydown)="buscarGatinho($event)">
+</div>
+
 <div *ngFor="let photo of ArrayPhotos">
-    <img [src]="photo?.img" />
+    <img (click)="abrirModal(photo)" [src]="photo?.img" />
+    <app-card [ngClass]="{'disponivel' : photo.modal, 'indisponivel' : !photo.modal}" [modal]="photo"></app-card>
 </div>

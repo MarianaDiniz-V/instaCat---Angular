@@ -3,7 +3,33 @@
     padding: 0;
     box-sizing: border-box;
 }
+.input-search{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 100px;
+    width: 100vw;
+}
+input{
+    all: unset;
+
+    width: 25%;
+    height: 30px;
+
+    border: 1px solid #968b8bce;
+    border-radius: 10px;
+    padding: 2px 10px;
+
+}
 img{
     height: 300px;
     width: 400px;
+
+    cursor: pointer;
+}
+.indisponivel{
+    display: none;
+}
+app-card {
+    height: 100%;
 }

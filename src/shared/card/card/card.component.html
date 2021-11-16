@@ -1,0 +1,27 @@
+<div class="container-modal">
+    <div class="close">
+        <img [src]="close" (click)="fecharModal(modal)">
+    </div>
+
+
+    <img [src]="modal?.img" class="post">
+    <div class="infos">
+        <p class="name-cat">{{modal?.name}}</p>
+        <span>curtida por {{modal?.likes}} pessoas</span>
+    </div>
+    <div class="infos">
+        <input type="text" [ngClass]="{'mostrarInput' : caixaDeInput}" (keydown)="mostrarComentarios($event)">
+        <div class="icons">
+            <img [src]="heart" [ngClass]="{'like' : modal?.like}" (click)="liked(modal)">
+            <img [src]="balloon" (click)="mostrarInput()">
+        </div>
+    </div>
+    <div class="container-comentarios">
+        <div class="comentarios" *ngFor="let comentario of comentarios">
+            <p>{{comentario}}</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- (click)="fecharModal(modal)" -->
