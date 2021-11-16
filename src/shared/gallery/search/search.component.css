@@ -27,6 +27,11 @@ img{
 
     cursor: pointer;
 }
+img:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
 .indisponivel{
     display: none;
 }
