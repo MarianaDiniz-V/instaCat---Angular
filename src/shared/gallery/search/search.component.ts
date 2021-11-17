@@ -26,7 +26,13 @@ export class SearchComponent implements OnInit {
     { img: "https://cdn2.thecatapi.com/images/8tq.jpg", modal: false, like: false, name: "benjamin.1", likes: 12 },
     { img: "https://cdn2.thecatapi.com/images/9fn.jpg", modal: false, like: false, name: "perola.cat", likes: 192 },
     { img: "https://cdn2.thecatapi.com/images/eie.jpg", modal: false, like: false, name: "cinderela", likes: 218 },
-    { img: "https://cdn2.thecatapi.com/images/eev.jpg", modal: false, like: false, name: "ramana", likes: 317 }
+    { img: "https://cdn2.thecatapi.com/images/eev.jpg", modal: false, like: false, name: "ramana", likes: 317 },
+    { img: "https://cdn2.thecatapi.com/images/7B3W2JCEl.jpg", modal: false, like: false, name: "conrado", likes: 1911 },
+    { img: "https://cdn2.thecatapi.com/images/rsBOTSbAm.jpg", modal: false, like: false, name: "teddy.ly", likes: 3022 },
+    { img: "https://cdn2.thecatapi.com/images/7tzyVT8_f.jpg", modal: false, like: false, name: "anya.kathy", likes: 1003 },
+    { img: "https://cdn2.thecatapi.com/images/Sh4tWXRtw.jpg", modal: false, like: false, name: "phelps.14", likes: 711 },
+    { img: "https://cdn2.thecatapi.com/images/KOvZKFRjn.jpg", modal: false, like: false, name: "bobcosta", likes: 36 }
+
   ]
 
   ArrayPhotos: Array<data> = this.ArraydeGatinho;
@@ -36,7 +42,7 @@ export class SearchComponent implements OnInit {
   }
   buscarGatinho(event: any) {
     if (event.code === 'Enter') {
-      const filtrados = this.ArrayPhotos.filter(cat => cat.name.includes(event.target.value))
+      const filtrados = this.ArraydeGatinho.filter(cat => cat.name.includes(event.target.value))
       this.ArrayPhotos = filtrados;
       event.target.value = ''
     }

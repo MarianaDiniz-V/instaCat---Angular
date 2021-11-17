@@ -22,8 +22,8 @@ input{
 
 }
 img{
-    height: 300px;
-    width: 400px;
+    max-height: 220px;
+    width: auto;
 
     cursor: pointer;
 }
