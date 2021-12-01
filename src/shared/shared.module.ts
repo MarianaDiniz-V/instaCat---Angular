@@ -7,6 +7,8 @@ import { LoginComponent } from './login/login/login.component';
 import { CardComponent } from './card/card/card.component';
 import { FeaturesModule } from 'src/features/features.module';
 import { HeaderModule } from 'src/features/header/header.module';
+import { BlackDirective } from './directives/dark/black.directive';
+import { WhiteDirective } from './directives/light/white.directive';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { HeaderModule } from 'src/features/header/header.module';
     SearchComponent,
     LoginComponent,
     LogComponent,
-    CardComponent
+    CardComponent,
+    BlackDirective,
+    WhiteDirective
   ],
   imports: [
     CommonModule,

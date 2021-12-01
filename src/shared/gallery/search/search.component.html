@@ -1,9 +1,30 @@
-<div class="input-search">
-    <h1></h1>
-    <input type="text" (keydown)="buscarGatinho($event)">
-</div>
+<div class="container">
+    <div *ngIf="!light" class="container-feed" appBlack>
+        <div class="tema">
+            <img [src]="tema" alt="icone sol/lua" (click)="trocarTema()">
+        </div>
+        <div class="input-search">
+            <input type="text" (keydown)="buscarGatinho($event)" appBlack>
+        </div>
 
-<div *ngFor="let photo of ArrayPhotos">
-    <img (click)="abrirModal(photo)" [src]="photo?.img" />
-    <app-card [ngClass]="{'disponivel' : photo.modal, 'indisponivel' : !photo.modal}" [modal]="photo"></app-card>
+        <div *ngFor="let photo of ArrayPhotos">
+            <img (click)="abrirModal(photo)" [src]="photo?.img" />
+            <app-card [ngClass]="{'disponivel' : photo.modal, 'indisponivel' : !photo.modal}" [modal]="photo">
+            </app-card>
+        </div>
+    </div>
+    <div *ngIf="light" class="container-feed" appWhite>
+        <div class="tema">
+            <img [src]="tema" alt="icone sol/lua" (click)="trocarTema()">
+        </div>
+        <div class="input-search">
+            <input type="text" (keydown)="buscarGatinho($event)" appWhite>
+        </div>
+
+        <div *ngFor="let photo of ArrayPhotos">
+            <img (click)="abrirModal(photo)" [src]="photo?.img" />
+            <app-card [ngClass]="{'disponivel' : photo.modal, 'indisponivel' : !photo.modal}" [modal]="photo">
+            </app-card>
+        </div>
+    </div>
 </div>

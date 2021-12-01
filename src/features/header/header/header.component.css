@@ -32,10 +32,6 @@ nav{
 
     color: #FFFFFF;
 }
-.left img{
-    height: 50px;
-    cursor: pointer;
-}
 ul{
     display: flex;
     justify-content: flex-end;
